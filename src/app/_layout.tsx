@@ -1,7 +1,20 @@
-import { Stack } from "expo-router";
+import { Stack } from 'expo-router';
 
 export default function Layout() {
-    <Stack>
-      <Stack.Screen name="index" options={{ headerShown: false }} />
+  return (
+    <Stack
+      screenOptions={{
+          statusBarTranslucent: true,
+          headerShown: false,
+        headerStyle: {
+          backgroundColor: '#f4511e',
+        },
+        headerTintColor: '#fff',
+        headerTitleStyle: {
+          fontWeight: 'bold',
+        }
+      }}>
+      <Stack.Screen name="(auth)" options={{}} />
     </Stack>
+  );
 }
